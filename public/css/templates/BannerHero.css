@@ -1,0 +1,72 @@
+.banner-content {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.banner-content .banner--title {
+    margin: 0 auto;
+    padding: 0 0 2rem 0;
+    text-align: center;
+    max-width: 850px;
+}
+
+.banner-content .banner--title h2 {
+    padding: 0 3rem;
+    font-size: var(--main-title-font);
+    line-height: calc(var(--main-title-font) + 1rem);
+    color: var(--main-blue);
+}
+
+.banner-content .banner--title p {
+    margin-block-start: 2rem;
+    margin-block-end: 4rem;
+    font-size: var(--sub-title-font);
+    line-height: calc(var(--sub-title-font)+1rem);
+    color: var(--main-black);
+}
+
+.banner-content .banner--description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-content .banner--description img {
+    width: 100%;
+    max-width: 740px;
+    min-width: 320px;
+}
+
+.banner-content .banner--description .banner__benefits {
+    text-align: right;
+    width: 50%;
+    /* max-width: 620px; */
+    padding-inline-end: 2rem;
+}
+
+.banner--description .banner__benefits p {
+    margin-block-start: 2rem;
+    font-size: var(--sub-title-font);
+    line-height: calc(var(--sub-title-font)+1rem);
+    color: var(--main-black);
+}
+
+.banner--description .banner__benefits .banner-cta {
+    display: block;
+    padding: 1.6rem 2rem;
+    border-radius: 1.2rem;
+    background-color: var(--main-blue);
+    color: var(--main-white);
+    font-weight: bold;
+    text-decoration: none;
+    width: fit-content;
+    padding: 2rem;
+    margin-block-start: 2rem;
+    margin-inline-start: auto;
+    font-size: var(--link-font);
+}
+
+.banner--description .banner__benefits .banner-cta:hover {
+    background-color: var(--secondary-blue);
+}

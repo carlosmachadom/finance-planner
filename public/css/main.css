@@ -1,0 +1,45 @@
+:root {
+    --main-black: rgb(5, 15, 47);
+    --main-blue: #1847ED;
+    --secondary-blue: #4159ac;
+    --main-white: #f1f4fd;
+    --secondary-white: rgb(179, 192, 232);
+    --main-title-font: 5rem;
+    --sub-title-font: 3rem;
+    --regular-text-font: 3rem;
+    --link-font: 1.8rem;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--main-white);
+}
+
+li {
+    list-style: none;
+}
+
+.content-container {
+    width: 100%;
+    min-height: 100svh;
+    min-height: 100dvh;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+.benefits-section {
+    background-color: var(--main-blue);
+    padding: 4rem 0 0 0;
+}

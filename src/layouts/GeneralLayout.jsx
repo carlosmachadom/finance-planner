@@ -4,11 +4,11 @@ import  Footer  from "@templates/Footer";
 
 const Layout = () => {
     return (
-        <>
+        <div className="content-container">
             <Header />
             <Outlet />
             <Footer />
-        </>
+        </div>
     )
 }
 

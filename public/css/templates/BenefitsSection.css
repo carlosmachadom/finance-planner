@@ -1,0 +1,62 @@
+.benefits {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.benefits .benefits-title {
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: var(--sub-title-font);
+    line-height: calc(var(--sub-title-font) + 1rem);
+    color: var(--main-white);
+}
+
+.benefits .benefits-list {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.benefits .benefits-bottom {
+    padding: 0 0 2rem 0;
+    background-image: url("@images/bottomDeco.svg");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.benefits .benefits-bottom .bottom--text {
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: var(--sub-title-font);
+    line-height: calc(var(--sub-title-font) + 1rem);
+    color: var(--main-white);
+}
+
+.benefits .benefits-bottom .link-button {
+    margin: 0 auto;
+    display: block;
+    padding: 1.6rem 2rem;
+    max-width: 300px;
+    border-radius: 1.2rem;
+    background-color: transparent;
+    border: solid 2px var(--main-white);
+    color: var(--main-blue);
+    font-weight: bold;
+    font-size: var(--link-font);
+    color: var(--main-white);
+    text-decoration: none;
+    text-align: center;
+    margin-block-start: 4rem;
+    margin-block-end: 20rem;
+}
+
+.benefits .benefits-bottom .link-button:hover {
+    color: var(--main-blue);
+    background-color: var(--main-white);
+}
