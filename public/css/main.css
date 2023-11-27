@@ -1,9 +1,50 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url('@fonts/Montserrat-Light.ttf') format('ttf');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url('@fonts/Montserrat-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    src: url('@fonts/Montserrat-Medium.ttf') format('ttf');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    src: url('@fonts/Montserrat-SemiBold.ttf') format('ttf');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    src: url('@fonts/Montserrat-Bold.ttf') format('ttf');
+}
+
 :root {
     --main-black: rgb(5, 15, 47);
     --main-blue: #1847ED;
     --secondary-blue: #4159ac;
     --main-white: #f1f4fd;
     --secondary-white: rgb(179, 192, 232);
+    
     --main-title-font: 5rem;
     --sub-title-font: 3rem;
     --regular-text-font: 3rem;
@@ -18,11 +59,13 @@
 
 html {
     font-size: 62.5%;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     background-color: var(--main-white);
+    scroll-behavior: smooth;
+    position: relative;
 }
 
 li {
@@ -31,15 +74,29 @@ li {
 
 .content-container {
     width: 100%;
+    min-width: 300px;
     min-height: 100svh;
     min-height: 100dvh;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
+    scroll-behavior: smooth;
+}
+
+.banner-hero {
+    width: 100%;
+    min-width: 300px;
 }
 
 .benefits-section {
+    width: 100%;
+    min-width: 300px;
     background-color: var(--main-blue);
     padding: 4rem 0 0 0;
+}
+
+.waitlist-form {
+    width: 100%;
+    min-width: 300px;
 }

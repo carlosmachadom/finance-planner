@@ -1,25 +1,31 @@
 .banner-content {
     width: 100%;
+    min-width: 300px;
     max-width: 1440px;
     margin: 0 auto;
     padding: 4rem 0;
 }
 
 .banner-content .banner--title {
+    width: 100%;
+    min-width: 300px;
     margin: 0 auto;
-    padding: 0 0 2rem 0;
+    padding: 0 2rem 2rem 2rem;
     text-align: center;
-    max-width: 850px;
 }
 
-.banner-content .banner--title h2 {
-    padding: 0 3rem;
+.banner-content .banner--title h1 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
     font-size: var(--main-title-font);
     line-height: calc(var(--main-title-font) + 1rem);
     color: var(--main-blue);
 }
 
 .banner-content .banner--title p {
+    max-width: 1020px;
+    margin: 0 auto;
     margin-block-start: 2rem;
     margin-block-end: 4rem;
     font-size: var(--sub-title-font);
@@ -29,23 +35,23 @@
 
 .banner-content .banner--description {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.banner-content .banner--description img {
+.banner-content .banner--description .banner__image img {
     width: 100%;
-    max-width: 740px;
-    min-width: 320px;
+    min-width: 300px;
+    max-width: 720px;
 }
 
 .banner-content .banner--description .banner__benefits {
-    text-align: right;
-    width: 50%;
-    /* max-width: 620px; */
-    padding-inline-end: 2rem;
+    width: 100%;
+    padding: 0 2rem 2rem 2rem;
 }
 
 .banner--description .banner__benefits p {
+    text-align: right;
     margin-block-start: 2rem;
     font-size: var(--sub-title-font);
     line-height: calc(var(--sub-title-font)+1rem);
@@ -69,4 +75,70 @@
 
 .banner--description .banner__benefits .banner-cta:hover {
     background-color: var(--secondary-blue);
+}
+
+@media (max-width: 640px) {
+    .banner-content .banner--title h1 {
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+
+    .banner-content .banner--title p {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    .banner--description .banner__benefits {
+        margin: 0 auto;
+    }
+
+    .banner-content .banner--description .banner__image {
+        margin: 0 auto;
+    }
+    
+    .banner--description .banner__benefits p {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+
+    .banner--description .banner__benefits .banner-cta {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width:641px) and (max-width: 1019px) {
+    .banner-content .banner--description .banner__image {
+        margin: 0 auto;
+    }
+
+    .banner--description .banner__benefits {
+        margin: 0 auto;
+    }
+
+    .banner--description .banner__benefits p {
+        text-align: center;
+    }
+
+    .banner--description .banner__benefits .banner-cta {
+        width: 100%;
+        text-align: center;
+    }
+} 
+
+@media (min-width:1020px) {
+    .banner-content .banner--description .banner__benefits {
+        margin: 0;
+    }
+
+    .banner-content .banner--description {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    .banner--description .banner__benefits p {
+        margin-block-start: 6rem;
+    }
 }

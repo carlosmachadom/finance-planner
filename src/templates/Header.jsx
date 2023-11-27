@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+import scrollToElement from "@utils/scrollToelement";
 import "@styles/templates/Header.css";
+import logo from "@images/logo.svg";
 
 const Header = () => {
     return (
@@ -8,30 +9,38 @@ const Header = () => {
                 <ul className="nav--items">
                     <section className="logo">
                         <li className="nav__item">
-                            <Link to="/" className="header-logo">
-                                <img src={"#"} alt="Finance Plannel Logo" title="Finance Plannel Logo"/>
-                                <h1>Finance Planner</h1>
-                            </Link>
+                            <a href="/" className="header-logo">
+                                <img src={logo} alt="Finance Plannel Logo" title="Finance Plannel Logo"/>
+                            </a>
                         </li>
                     </section>
 
                     <section className="navigation">
                         <li>
-                            <Link to="#banner" className="link__item">
+                            <a href="#banner" className="link__item" onClick={e => {
+                                e.preventDefault();
+                                scrollToElement('banner');
+                            }}>
                                 Inicio
-                            </Link>
+                            </a>
                         </li>
 
                         <li>
-                            <Link to="#benefits" className="link__item">
+                            <a href="#benefits" className="link__item" onClick={e => {
+                                e.preventDefault();
+                                scrollToElement('benefits');
+                            }}>
                                 Explora
-                            </Link>
+                            </a>
                         </li>
 
                         <li>
-                            <Link to="#form" className="link__item">
+                            <a href="#form" className="link__item" onClick={e => {
+                                e.preventDefault();
+                                scrollToElement('form');
+                            }}>
                                 Unirse a la lista
-                            </Link>
+                            </a>
                         </li>
                     </section>
                 </ul>

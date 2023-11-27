@@ -1,5 +1,6 @@
 import BannerHero from "@templates/BannerHero";
 import BenefitsSection from "@templates/BenefitsSection";
+import FormSection from "@templates/FormSection";
 
 const Home = () => {
     return (
@@ -12,8 +13,8 @@ const Home = () => {
                 <BenefitsSection />
             </section>
 
-            <section className="witlist-form" id="form">
-                
+            <section className="waitlist-form" id="form">
+                <FormSection />
             </section>
         </main>
     );

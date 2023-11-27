@@ -1,0 +1,28 @@
+.footer {
+    width: 100%;
+    min-width: 300px;
+    background-color: var(--main-blue);
+}
+
+.footer .footer-nav {
+    width: 100%;
+    max-width: 1440px;
+    padding: 4rem 2rem;
+    margin: 0 auto;
+}
+
+.footer-nav .nav--items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-nav .nav--items .nav__item {
+    text-align: center;
+}
+
+.footer-nav .nav--items .nav__item a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--main-white);
+}

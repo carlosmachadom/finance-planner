@@ -73,7 +73,7 @@ module.exports = {
             filename: 'styles/[name].[contenthash].css'
         }),
         new DotEnv(),
-        //new FaviconsWebpackPlugin('./public/assets/images/Marvel-stuff-icon.png'),
+        new FaviconsWebpackPlugin('./public/assets/images/Favicon.png'),
     ],
     optimization: {
         minimize: true,

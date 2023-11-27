@@ -1,0 +1,37 @@
+#toast {
+    position: fixed;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    margin: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#toast.fade-out {
+    opacity: 0;
+}
+
+.toast-container {
+    color: var(--main-white);
+    padding: 2rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.toast-container.success {
+    background-color: green;
+}
+
+.toast-container.error {
+    background-color: red;
+}
+
+.toast--title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.toast--text {
+    font-size: 1.2rem;
+}
